@@ -1,0 +1,37 @@
+{
+  "name": "apprestapi",
+  "version": "1.0.0",
+  "description": "Final Project RestAPI NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roditu/FP_RestAPI.git"
+  },
+  "keywords": [
+    "fpb201"
+  ],
+  "author": "Radhito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roditu/FP_RestAPI/issues"
+  },
+  "homepage": "https://github.com/Roditu/FP_RestAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "ip": "^1.1.8",
+    "jsonwebtoken": "^9.0.0",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
