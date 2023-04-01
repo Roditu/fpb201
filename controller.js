@@ -31,12 +31,14 @@ exports.showAll = function(req,res){
     });
 };
 
-exports.showpage = function(req,res){
+
+/*exports.showpage = function(req,res){
     var perPage = 10;
     var curPage = req.query.page || 1;
-    var offset = (perPage - 1)* perPage;
+    var offset = (curPage - 1) * perPage; 
+    var total;
    
-    connection.query('SELECT * FROM `digidb_digimonlist` PERPAGE ${perPage} OFFSET ${offset}', 
+    connection.query('SELECT * FROM `digidb_digimonlist` LIMIT 5 OFFSET (`${offset}`)', 
     function(error, rows, fields){
         if(error){
             console.log('Error !!!');
@@ -44,10 +46,11 @@ exports.showpage = function(req,res){
                 message: error
             });
         }else{
-            response.ok(rows, res);
+            response.ok(rows, res); 
+            
         }
         })
-    }
+    }*/
 
 
 

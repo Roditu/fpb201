@@ -17,6 +17,8 @@ module.exports = function(app){
 
     app.get('/show/:number', control.shownumber);
 
+    //app.get('/showpage?page=1', control.showpage);
+
     //[POST]
     app.post('/create', verifikasi(2), control.add_digi);
 
